@@ -61,7 +61,7 @@ function decode(expr = '') {
         .join('')
         .replace(/^0+/, '') // delete all '0' at the beginning of the string
         .match(/..?/g) // split the string into an array of two elements
-        ?.map((item) => (item === '10' ? '.' : '-')) // convertation each array element like '10' ('11') to '.' or '-'
+        .map((item) => (item === '10' ? '.' : '-')) // convertation each array element like '10' ('11') to '.' or '-'
   )
   /**
    * Join each array element
